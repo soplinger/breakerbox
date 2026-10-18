@@ -1,0 +1,16 @@
+# Example household panel: 200 A split-phase service, 42-space panel.
+# Leg A is loaded heavier than leg B, so `breakerbox balance` has work to do.
+service 200 A
+spaces 42
+
+# name                    | legs | breaker A | load A | continuous?
+Kitchen counter receptacles | A  | 20 | 14
+Living room receptacles     | A  | 15 | 8
+Garage receptacles          | A  | 20 | 16 | yes
+Bedroom 1 lighting          | B  | 15 | 3
+Bathroom receptacles        | B  | 20 | 5
+Furnace blower              | B  | 15 | 6
+Range                       | AB | 50 | 36
+Clothes dryer               | AB | 30 | 22
+Heat pump                   | AB | 40 | 25 | yes
+EV charger                  | AB | 40 | 32 | yes
